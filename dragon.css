@@ -1,0 +1,52 @@
+body,html{height:100%;width:100%;margin:0;padding:0;background:url(./img/mainbg.jpg) repeat 0 0;font-family:arial, sans-serif;}
+body{float:left;}
+header{padding: 0 25px 25px 20px;background:url(./img/yellowbg3.jpg) repeat 0 0;float:left;position:relative;z-index:0;text-shadow: 0 0 1px rgba(0,0,0,0.4);}
+.piece {cursor:pointer;position:absolute;top:0;left:0;background-color:transparent;width:99px;height:99px;z-index:initial;}
+.child{width:99px;height:99px;}
+.parent{background-color:transparent;position:absolute;}
+.shadow .shadow{width:99px;height:99px;position:absolute;top:10px;left:10px;opacity:0.3;filter:alpha(opacity=30);z-index:0;}
+.complete.shadow .shadow{display:none;}
+.piece-image{width:99px;height:99px;position:absolute;top:0;left:0;z-index:5;}
+#piece1{left:50px; top:250px;}
+	#piece1 .piece-image, #piece1 .shadow{background:url(img/1.png) no-repeat 0 0;}
+#piece2{left:350px; top:350px;}
+	#piece2 .piece-image, #piece2 .shadow{background:url(img/2.png) no-repeat 0 0;}
+#piece3{left:700px; top:50px;}
+	#piece3 .piece-image, #piece3 .shadow{background:url(img/3.png) no-repeat 0 0;}
+#piece4{left:100px; top:400px;}
+	#piece4 .piece-image, #piece4 .shadow{background:url(img/4.png) no-repeat 0 0;}
+#piece5{left:500px; top:420px;}
+	#piece5 .piece-image, #piece5 .shadow{background:url(img/5.png) no-repeat 0 0;}
+#piece6{left:650px; top:350px;}
+	#piece6 .piece-image, #piece6 .shadow{background:url(img/6.png) no-repeat 0 0;}
+#piece7{left:350px; top:200px;}
+	#piece7 .piece-image, #piece7 .shadow{background:url(img/7.png) no-repeat 33px 0;}
+#piece8{left:900px; top:100px;}
+	#piece8 .piece-image, #piece8 .shadow{background:url(img/8.png) no-repeat 0 0;}
+#piece9{left:800px; top:250px;}
+	#piece9 .piece-image, #piece9 .shadow{background:url(img/9.png) no-repeat 0 0;}
+#piece10{left:520px; top:300px;}
+	#piece10 .piece-image, #piece10 .shadow{background:url(img/10.png) no-repeat 0 0;}
+#piece11{left:950px; top:450px;}
+	#piece11 .piece-image, #piece11 .shadow{background:url(img/11.png) no-repeat 0 33px;}
+#piece12{left:200px; top:250px;}
+	#piece12 .piece-image, #piece12 .shadow{background:url(img/12.png) no-repeat 0 0;}
+#piece13{left:650px; top:150px;}
+	#piece13 .piece-image, #piece13 .shadow{background:url(img/13.png) no-repeat 0 0;}
+#piece14{left:950px; top:250px;}
+	#piece14 .piece-image, #piece14 .shadow{background:url(img/14.png) no-repeat 0 0;}
+#piece15{left:775px; top:425px;}
+	#piece15 .piece-image, #piece15 .shadow{background:url(img/15.png) no-repeat 0 33px;}
+#piece16{left:190px; top:450px;}
+	#piece16 .piece-image, #piece16 .shadow{background:url(img/16.png) no-repeat 33px 0;}
+	
+#overlay{background:#000;opacity:0.9;filter:alpha(opacity=90);z-index:1001;width:100%;height:100%;position:absolute;top:0;display:none;cursor:pointer;}
+#finished-preview{width:400px; height: 400px; margin-left:-200px;margin-top:-200px;position:absolute;top:50%;left:50%;background-color:#fff; z-index:1002;display:none;}
+	#dragon{background:url(./img/dragon-preview.png) no-repeat 0 0;width:360px;height:360px; top:20px;left:20px;position:relative;}
+#show-preview{cursor:pointer; text-decoration:underline;margin-left:1px;}
+.shadow-left,.shadow-left-nav{display:block;background:url(./img/shadow-v.png) repeat-y 0 0;position:absolute;z-index:101;top:0;left:-12px;width:31px;height:100%;overflow:visible;}
+.shadow-right{background:url(./img/shadow-v.png) repeat-y 0 0;position:absolute;z-index:101;top:0;right:-19px;width:31px;height:100%;overflow:visible;}
+.shadow-top{background:url(./img/shadow-h.png) repeat-x 0 0;height:22px;width:100%;position:absolute;z-index:101;top:-11px;left:0;}
+.shadow-bottom{background:url(./img/shadow-h.png) repeat-x 0 0;height:22px;width:100%;position:absolute;z-index:101;bottom:-11px;left:0;}
+.shadow-br{opacity:0.7;filter:alpha(opacity=70);width:9px;height:8px;background:url(./img/shadow-corner-br.png) no-repeat 0 0;position:absolute;bottom:-8px;right:-9px;}
+#complete{box-shadow:rgb(0, 0, 0) 0px 0px 15px 5px, inset rgb(0, 0, 0) 0px 0px 15px 5px;width:100%;height:100%;position:absolute;z-index:1001;}

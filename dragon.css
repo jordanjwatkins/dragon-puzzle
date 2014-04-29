@@ -1,4 +1,4 @@
-body,html{height:100%;width:100%;margin:0;padding:0;background:url(./img/mainbg.jpg) repeat 0 0;font-family:arial, sans-serif;}
+body,html{height:100%;width:100%;margin:0;padding:0;background:url(./img/mainbg.jpg) repeat 0 0;font-family:arial, sans-serif;min-width:1080px;min-height:600px;}
 body{float:left;}
 header{padding: 0 25px 25px 20px;background:url(./img/yellowbg3.jpg) repeat 0 0;float:left;position:relative;z-index:0;text-shadow: 0 0 1px rgba(0,0,0,0.4);}
 .piece {cursor:pointer;position:absolute;top:0;left:0;background-color:transparent;width:99px;height:99px;z-index:initial;}
@@ -40,7 +40,7 @@ header{padding: 0 25px 25px 20px;background:url(./img/yellowbg3.jpg) repeat 0 0;
 #piece16{left:190px; top:450px;}
 	#piece16 .piece-image, #piece16 .shadow{background:url(img/16.png) no-repeat 33px 0;}
 	
-#overlay{background:#000;opacity:0.9;filter:alpha(opacity=90);z-index:1001;width:100%;height:100%;position:absolute;top:0;display:none;cursor:pointer;}
+#overlay{background:#000;opacity:0.9;filter:alpha(opacity=90);z-index:1001;width:100%;height:100%;position:fixed;top:0;display:none;cursor:pointer;}
 #finished-preview{width:400px; height: 400px; margin-left:-200px;margin-top:-200px;position:absolute;top:50%;left:50%;background-color:#fff; z-index:1002;display:none;}
 	#dragon{background:url(./img/dragon-preview.png) no-repeat 0 0;width:360px;height:360px; top:20px;left:20px;position:relative;}
 #show-preview{cursor:pointer; text-decoration:underline;margin-left:1px;}

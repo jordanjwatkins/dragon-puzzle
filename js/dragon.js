@@ -89,8 +89,8 @@ jQuery(function($) {
 						var p1 = c.position();					
 						var partner = allConnectors['connectors_' + c.partner['piece']]['c' + c.partner['id']];
 						var p2 = partner.position();
-						var xAlign = (p2.x - 5) < p1.x && p1.x < (p2.x + 5);
-						var yAlign = (p2.y - 5) < p1.y && p1.y < (p2.y + 5);
+						var xAlign = (p2.x - 20) < p1.x && p1.x < (p2.x + 20);
+						var yAlign = (p2.y - 20) < p1.y && p1.y < (p2.y + 20);
 						//deactivate matched connectors and add them to matches array
 						if (xAlign && yAlign){
 							aMatch = 1;

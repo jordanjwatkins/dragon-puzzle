@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="dragon.css" />
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
 	<script src="js/dragon.js"></script>
 </head>
 
@@ -30,12 +31,10 @@
 	<script>
 		$(document).ready(function(){
 			$('#show-preview').click(function(){
-				$('#overlay').toggle();
-				$('#finished-preview').toggle();
+				$('#overlay, #finished-preview').toggle();
 			});
-			$('#overlay').click(function(){
-				$('#overlay').toggle();
-				$('#finished-preview').toggle();
+			$('#overlay, #finished-preview').click(function(){
+				$('#overlay, #finished-preview').toggle();
 			});
 		});
 	</script>
